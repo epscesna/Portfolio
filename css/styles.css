@@ -1,7 +1,21 @@
-nav{
-    background-image: url("../images/tecky.jpg");
 
+/*colors# #7E9AD1
+          #5374B6
+          #1A4498
+          #103274
+*/
+body{
+    font-family: "Gabriola", serif;
 }
-.brand{
-    color: #ffffff;
+
+/******************* NavBar *******************/
+
+.navbar-default{
+    background-color: #7E9AD1;
 }
+
+.navbar-brand{
+    font-size: 3em;
+    color: #000;
+}
+

@@ -6,16 +6,16 @@
 */
 body{
     font-family: "Gabriola", serif;
+    background-color: #1A4498;
 }
-
+.white {
+  background-color: #fff;
+}
 /******************* NavBar *******************/
-
-.navbar-default{
-    background-color: #7E9AD1;
+#fixed-image{
+  background-image: url(https://i.ytimg.com/vi/VBgW3GPhXPM/maxresdefault.jpg);
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-.navbar-brand{
-    font-size: 3em;
-    color: #000;
-}
-

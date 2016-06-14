@@ -1,21 +1,168 @@
 
-/*colors# #7E9AD1
-          #5374B6
-          #1A4498
-          #103274
+/*colors# #7E9AD1 light blue
+          #343B70 new blue
+          #876C58 brown base
+          #798751 light green
+          #457050 dark green
+          #775187 violet accent
+          hsla(262, 86%, 72%, .25) cooling headline background
 */
+
+*{
+  box-sizing: border-box;
+  font-size: 1.11em;
+}
 body{
     font-family: "Gabriola", serif;
-    background-color: #1A4498;
+    background-color: #343B70;
 }
-.white {
+.bg-color {
+  background-color: #876C58;
+}
+.bg-white{
   background-color: #fff;
+  box-sizing: border-box;
 }
-/******************* NavBar *******************/
-#fixed-image{
-  background-image: url(https://i.ytimg.com/vi/VBgW3GPhXPM/maxresdefault.jpg);
-  height: 500px;
+h1{
+  margin: 0;
+  padding: 0;
+  line-height: .7;
+  color: #000;
+}
+hr{
+  width: 80%;
+  padding-left: 10%;
+  border-top: 1px solid #775187;
+
+}
+p {
+    margin: 20% 0 10px 0;
+}
+.hr {
+  margin-left: 3%;
+}
+
+/************** HOME Area ******************/
+#home{
+  height: 200%;
+  width: auto;
+  text-align: center;
+  background-image: url('../images/home_hero.jpg');
+  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
+}
+
+.headline{
+  margin: 0 auto 2% auto;
+  height: 1%;
+  width: 25%;
+  opacity: 1;
+  /*z-index: 1;*/
+}
+.headline h1{
+  text-shadow: 1px 1px 1px #798751;
+  opacity: 1;
+  padding-top: 7%;
+  color: #000;
+  margin
+  /*z-index: 1;*/
+}
+.call{
+  margin: 3% auto;
+  height: auto;
+  width: 25%;
+  opacity: 1;
+  /*z-index: 1;*/
+}
+.call p {
+  /*z-index: 1;*/
+  text-shadow: 1px 1px 1px  #798751;
+}
+.op{
+  margin: 0 auto;
+  position: relative;
+  top:0;
+  background-color: hsla(262, 86%, 72%, .25);
+
+  height: 500px;
+  width: auto;
+  /*z-index: -1;*/
+}
+/****************** About Area **************************/
+.personal{
+  width: 100%;
+  margin: 0 auto
+}
+.photo{
+  width: 75%;
+  border-radius: 50%;
+  padding-top:  5%;
+  margin: 10%;
+}
+.quickbit{
+  padding-top: 5%;
+}
+.work-image{
+  padding-bottom: 1%;
+}
+.work-image img{
+  width: 85%;
+  margin: 5%;
+}
+.snipp{
+padding: 0 0 0 0;
+}
+.snipp p{
+  width: 85%;
+  margin: 5% auto;
+  text-align: center;
+}
+/******************* contact area***********************/
+
+#contact {
+  background-color: #457050;
+  height: 300px;
+}
+#contact div{
+  height: 200px;
+}
+#contact i{
+  font-size: 2.5em;
+  text-align: center;
+}
+#contact .icons a{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+
+}
+#footer p{
+  text-align: center;
+}
+
+/******************* NavBar *******************/
+.navbar{
+  background-color: #7E9AD1;
+  border: none;
+}
+nav li:hover{
+  background-color: hsla(142, 22%, 49%, .5);
+}
+
+/**************** Bootstrap Overrides**********************/
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000;
 }

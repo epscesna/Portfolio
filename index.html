@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" href="favicon.ico" >
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css" >
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./css/styles.css">
 
@@ -15,57 +16,136 @@
 
 
 <body>
-<div  class="container-fluid">
-  <nav class="navbar navbar-default">
-    <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class=" navbar-brand "  href="#"> Eric Cesena</a>
-        </div>
+  <div  class="container-fluid">
+    <nav class="navbar navbar-default">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class=" navbar-brand "  href="#"> <h1>EPC</h1></a>
+          </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active">
-                <a href="#home">HOME
-                    <span class="sr-only">(current)</span>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                  <a href="#home">HOME
+                      <span class="sr-only">(current)</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#about">ABOUT</a>
+              </li>
+              <li>
+                  <a href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    <div  class="container bg-color">
+      <section id="home" class="row ">
+        <div class="op">
+            <div class="headline">
+              <h1>Web Developer</h1>
+            </div>
+            <div class="call">
+              <p>A newer web developer eager for information and hungry for experiance I give you a glimps in to the things I have learned and done over the course my experiance so far.</p>
+            </div>
+         </div>
+      </section>
+      <section id="about" class=" container ">
+            <div class="row personal ">
+
+              <div class="image-box col-xs-12 col-sm-offset-1 col-sm-5">
+                <img class="photo" src="./images/EPC.JPG" alt="personal photo">
+              </div>
+              <div class="quickbit col-xs-12 col-sm-5">
+                <p>
+                  The work here is over the course of the last year of going from <em>Zero</em> knowlegde to be able to explain and understand browser side api calls and server side api calls in javascript and node.
+                </p>
+              </div>
+            </div>
+            <div class=" container row">
+
+            <hr class=" row hr">
+            <div class="row works">
+
+                <div class="snipp col-xs-12 col-sm-offset-1 col-sm-5">
+                  <p>This a colaberative work that had the pleasure of hooking into google api and rendering some calendar that are styled to look like a tv guide.</p>
+                </div>
+                <div class="work-image col-xs-12 col-sm-5 ">
+                  <a target="_blank" href="http://geekwiseschedule.shift3sandbox.com"><img src="./images/geekwise-scheduler.png" alt=""></a>
+                </div>
+            </div>
+            <hr class="row hr">
+            <div class="row works">
+
+                <div class="work-image col-xs-12 col-sm-offset-1 col-sm-5 ">
+                  <a target="_blank" href="http://ericpsc.github.io/edc/about.html"><img src="./images/secondportfolio.png" alt="last portfolio"></a>
+                </div>
+                <div class="snipp col-xs-12 col-sm-5">
+                  <p>One of the in class projects that we undertook was creating a portfolio site for us to have which was made with HTML and SCSS utilizing Gulp to transpose the SCSS to css. </p>
+                </div>
+            </div>
+            <hr class="row hr">
+            <div class="row works">
+
+                <div class="snipp col-xs-12 col-sm-offset-1 col-sm-5">
+                  <p>One of the first exercise that I learned was to pick a template, any template and recreate it in html and css no frameworks.</p>
+                </div>
+                <div class="work-image col-xs-12 col-sm-5 ">
+                  <a target="_blank" href="http://ericpsc.github.io/edc/aug05-exmachina"><img src="./images/theme-recreated.png" alt="wordpress threme remade in html and css"></a>
+                </div>
+            </div>
+            <hr class="row hr">
+            <div class="row works">
+
+                <div class=" work-image col-xs-12 col-sm-offset-1 col-sm-5">
+                  <a target="_blank" href="http://ericpsc.github.io/edc/aug11-twitter/"><img src="./images/twitter-recreate.png" alt="wordpress threme remade in html and css"></a>
+                </div>
+                <div class="snipp col-xs-12 col-sm-5 ">
+                  <p>One of the educational exercises that I was taught was to recreate a twitter page which gave me better pespctive on web design and flow.</p>
+                </div>
+            </div>
+          </div>
+      </section>
+</div>
+
+    <section id="contact" class="container">
+      <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-5">
+              <p>
+                  Looking for new and interesting opportunities to show my skill contact me either by <a href="mailto:ericcesena@gmail.com">email</a> or <a href="tel:559-903-0934">phone</a>
+              </p>
+            </div>
+
+            <div class="icons col-xs-12  col-sm-5">
+                <a href="http://twitter.com/intent/tweet?screen_name=EPSC30">
+                  <i class="fa fa-twitter" ></i>
                 </a>
-            </li>
-            <li>
-                <a href="#about">ABOUT</a>
-            </li>
-            <li>
-                <a href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
 
-  <div id="fixed-image" class="container-fluid white">
-  <section id="home" class="row ">
 
-  </section>
-  <section id="about" class="row ">
+                    <a href="https://www.linkedin.com/in/ericcesena">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+            </div>
+        </div>
+      </section>
 
-  </section>
-  <section id="contact" class="row ">
+      <footer id="footer" class="container">
+        <div class="row">
+          <p>Eric Cesena&copy; 2016</p>
+        </div>
+      </footer>
 
-  </section>
-</div>
-  <footer>
-      <i></i>
-      <i></i>
-      <i></i>
-      <p>Eric Cesena&copy; 2016</p>
-  </footer>
-</div>
+
 
   <script src="./js/jquery-2.2.4.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>

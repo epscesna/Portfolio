@@ -11,6 +11,8 @@
 *{
   box-sizing: border-box;
   font-size: 1.11em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
 }
 body{
     font-family: "Gabriola", serif;
@@ -29,22 +31,23 @@ h1{
   line-height: .7;
   color: #000;
 }
+p{
+  margin-top: 25%;
+}
 hr{
   width: 80%;
   padding-left: 10%;
   border-top: 1px solid #775187;
 
 }
-p {
-    margin: 20% 0 10px 0;
-}
+
 .hr {
   margin-left: 3%;
 }
 
 /************** HOME Area ******************/
 #home{
-  height: 200%;
+  height: 25em;
   width: auto;
   text-align: center;
   background-image: url('../images/home_hero.jpg');
@@ -56,9 +59,9 @@ p {
 }
 
 .headline{
-  margin: 0 auto 2% auto;
+  margin: 0 auto;
   height: 1%;
-  width: 25%;
+  /*width: 25%;*/
   opacity: 1;
   /*z-index: 1;*/
 }
@@ -67,28 +70,35 @@ p {
   opacity: 1;
   padding-top: 7%;
   color: #000;
-  margin
+  font-size: 3em;
+  position: relative;
+  left: 112%;
+  top: 0;
   /*z-index: 1;*/
 }
 .call{
   margin: 3% auto;
   height: auto;
-  width: 25%;
+
   opacity: 1;
   /*z-index: 1;*/
 }
 .call p {
   /*z-index: 1;*/
+  margin-top: 0;
+  margin: 0;
   text-shadow: 1px 1px 1px  #798751;
+  position: relative;
+  top: 120px;
+
 }
 .op{
   margin: 0 auto;
   position: relative;
   top:0;
   background-color: hsla(262, 86%, 72%, .25);
-
-  height: 500px;
   width: auto;
+  height: 22.52em;
   /*z-index: -1;*/
 }
 /****************** About Area **************************/
@@ -130,18 +140,28 @@ padding: 0 0 0 0;
   height: 200px;
 }
 #contact i{
+  position: relative;
+  bottom: 60px;
   font-size: 2.5em;
   text-align: center;
+  left: 16%;
 }
-#contact .icons a{
+.contact-p{
+  margin-top: 6%;
+  text-align: center;
+}
+
+/*#contact .icons a{
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
   transform: translateY(-50%);
+  transform: translateX(-50%);
 
-}
+
+}*/
 #footer p{
+  margin: 0;
   text-align: center;
 }
 
@@ -153,6 +173,13 @@ padding: 0 0 0 0;
 nav li:hover{
   background-color: hsla(142, 22%, 49%, .5);
 }
+/*********************** footer **********************************/
+#footer{
+  height: auto;
+  width: auto;
+
+}
+
 
 /**************** Bootstrap Overrides**********************/
 .container-fluid{
@@ -165,4 +192,52 @@ nav li:hover{
 }
 .navbar-default .navbar-nav>li>a {
     color: #000;
+}
+@media (max-width: 991px){
+  #contact i{
+    position: relative;
+    bottom: 60px;
+    font-size: 2.5em;
+    text-align: center;
+    left: 12%;
+  }
+}
+@media (max-width: 767px) {
+  #contact i{
+    position: relative;
+    bottom: 60px;
+    font-size: 2.5em;
+    text-align: center;
+    left: 10%;
+  }
+  .headline h1 {
+    text-shadow: 1px 1px 1px #798751;
+    opacity: 1;
+    padding-top: 7%;
+    color: #000;
+    font-size: 3em;
+    position: relative;
+    left: 1%;
+    top: 0;
+    /* z-index: 1; */
+}
+}
+@media (max-width: 680px) {
+  #contact i{
+    position: relative;
+    bottom: 60px;
+    font-size: 2.5em;
+    text-align: center;
+    left: 8%;
+  }
+}
+
+@media (max-width: 480px){
+  #contact i{
+    position: relative;
+    bottom: 60px;
+    font-size: 2.5em;
+    text-align: center;
+    left:3%;
+  }
 }

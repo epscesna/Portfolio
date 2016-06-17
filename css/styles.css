@@ -7,7 +7,9 @@
   box-sizing: border-box;
 }
 html, body{
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Cinzel', serif;
+    letter-spacing: .1em;
     font-size: 16px;
     margin: 0;
 }
@@ -35,20 +37,26 @@ img{
 #header{
   position: relative;
   top: 0em;
-  height: 42em;
+  height: 45em;
   background-color: rgba(0, 0, 0, .7);
   padding-top: 15em;
+  font-family: 'Cinzel', serif;
 }
 #header h1{
 
   font-size: 5em;
 }
-
+#header p{
+  letter-spacing: .2em;
+}
 
 /****************** About Area **************************/
+#about {
+  background-image: url('../images/congruent_outline.png');
+}
 .personal{
   display: flex;
-  background-color: rgba(37, 37, 37, 1);
+  background-color: rgba(37, 37, 37, .7);
   justify-content: space-around;
   flex-wrap: wrap-reverse;
   padding: 5em 0;
@@ -130,7 +138,7 @@ img{
 .contact-p{
   margin: 0 auto;
   text-align: center;
-  width: 25em;
+  width: 26em;
   color: rgba(255, 255, 255, 0.5);
   padding: 2em 0;
 }

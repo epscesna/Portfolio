@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./css/styles.css">
 
   <title>Eric Cesena</title>
@@ -17,8 +17,9 @@
 
 <body>
   <div  class="container-fluid">
-    <nav class="navbar navbar-default">
-      <div class="container">
+    <div id="home"class="heiro">
+      <nav class=" navbar-default">
+        <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
@@ -42,6 +43,9 @@
                   <a href="#about">ABOUT</a>
               </li>
               <li>
+                  <a href="#projects">PROJECTS</a>
+              </li>
+              <li>
                   <a href="#contact">CONTACT</a>
               </li>
             </ul>
@@ -49,111 +53,87 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-    <div  class="container bg-color">
-      <section id="home" class="row ">
-        <div class="op row" >
-            <div class="headline  col-xs-12 col-sm-offset-4 col-sm-4">
-              <h1>Web Developer</h1>
-            </div>
-            <div class="call  col-xs-12 col-sm-offset-4 col-sm-4">
-              <p>I am a recently trained web developer eager for information and hungry for experience. I give you a glimpse into the things I have learned and done over the course my experience so far.</p>
-          </div>
-         </div>
-      </section>
-      <section id="about" class=" container ">
+
+        <section id="header" class="row ">
+          <h1>Web Developer</h1>
+
+        </section>
+      </div>
+
+      <section id="about" class=" container-fluid ">
             <div class="row personal ">
 
-              <div class="image-box col-xs-12 col-sm-offset-1 col-sm-5">
-                <img class="photo" src="./images/EPC.JPG" alt="personal photo">
+              <div class="photo">
+                <img  src="./images/EPC.JPG" alt="personal photo">
               </div>
-              <div class="quickbit col-xs-12 col-sm-5">
+              <div>
                 <p>
-                  Over the course of the last year, I've gone from <em>zero</em> knowlegde to being able to explain and understand browser- and server-side api calls in Angular and Node.
+                  I am a program developer, I have focused my energy to creating websites and web application over the last year. I am enthusiastically seeking an opportunity to work with a great team to not only further my skills but to benefit the company as a whole.
                 </p>
+                <p>
+                  I am using and have used: HTML5, CSS, JavaScript, SCSS, LESS, GULP, GIT, GITHUB, NODE.js, Express, MongoDB, Angular.js, Mustache Express, Wordpress, PHP, and Python. I have continued to educate myself so that i stay up to date and my code stays relevant.
+                </p>
+
               </div>
             </div>
-            <div class=" container row">
+            <div id="projects" class=" container-fluid ">
 
-            <hr class=" row hr">
-            <div class="row works">
+            <div class=" works">
+                <a target="_blank" href="http://geekwiseschedule.shift3sandbox.com">
+                  <div class="work-image " data-content="This is a collaborative project on which I had the pleasure of hooking into the Google Calendar API and rendering the data to look like a TV guide.">
+                    <img src="./images/geekwise-scheduler.png" alt="">
+                  </div>
+                </a>
 
-                <div class="snipp col-xs-12 col-sm-offset-1 col-sm-5">
-                  <p>
-                    This is a collaborative project on which I had the pleasure of hooking into the Google Calendar api and rendering the data to look like a tv guide.
-                  </p>
+               <a target="_blank" href="http://ericpsc.github.io/edc/about.html">
+                <div class="work-image" data-content="One of the in-class projects that we undertook was creating a portfolio site which was made with HTML and SCSS, utilizing Gulp to transpose the SCSS to CSS.">
+                  <img src="./images/secondportfolio.png" alt="last portfolio">
                 </div>
-                <div class="work-image col-xs-12 col-sm-5 ">
-                  <a target="_blank" href="http://geekwiseschedule.shift3sandbox.com"><img src="./images/geekwise-scheduler.png" alt=""></a>
-                </div>
+              </a>
             </div>
-            <hr class="row hr">
-            <div class="row works">
+            <div class=" works">
+                <a target="_blank" href="http://ericpsc.github.io/edc/aug05-exmachina">
+                  <div class="work-image " data-content="One of the first exercises that I mastered was to pick a template (any template) and recreate it in HTML, CSS and occasionally using Bootstrap. This piece of work was done with Bootstrap.">
+                    <img src="./images/theme-recreated.png" alt="wordpress threme remade in html and css">
+                  </div>
+                </a>
 
-                <div class="work-image col-xs-12 col-sm-offset-1 col-sm-5 ">
-                  <a target="_blank" href="http://ericpsc.github.io/edc/about.html"><img src="./images/secondportfolio.png" alt="last portfolio"></a>
+              <a target="_blank" href="http://ericpsc.github.io/edc/aug11-twitter/">
+                <div class=" work-image" data-content="One of the educational exercises that I was taught was to recreate a twitter page which gave me better perspective on web design and flow. It was also one of the first times that I used Flex Box.">
+                  <img src="./images/twitter-recreate.png" alt="wordpress threme remade in html and css">
                 </div>
-                <div class="snipp col-xs-12 col-sm-5">
-                  <p>
-                    One of the in-class projects that we undertook was creating a portfolio site which was made with HTML and SCSS, utilizing Gulp to transpose the SCSS to CSS.
-                  </p>
-                </div>
-            </div>
-            <hr class="row hr">
-            <div class="row works">
-
-                <div class="snipp col-xs-12 col-sm-offset-1 col-sm-5">
-                  <p>
-                    One of the first exercises that I mastered was to pick a template (any template) and recreate it in HTML, CSS and occasionally using Bootstrap. This piece of work was done with Bootstrap.
-                  </p>
-                </div>
-                <div class="work-image col-xs-12 col-sm-5 ">
-                  <a target="_blank" href="http://ericpsc.github.io/edc/aug05-exmachina"><img src="./images/theme-recreated.png" alt="wordpress threme remade in html and css"></a>
-                </div>
-            </div>
-            <hr class="row hr">
-            <div class="row works">
-
-                <div class=" work-image col-xs-12 col-sm-offset-1 col-sm-5">
-                  <a target="_blank" href="http://ericpsc.github.io/edc/aug11-twitter/"><img src="./images/twitter-recreate.png" alt="wordpress threme remade in html and css"></a>
-                </div>
-                <div class="snipp col-xs-12 col-sm-5 ">
-                  <p>
-                    One of the educational exercises that I was taught was to recreate a twitter page which gave me better perspective on web design and flow. It was also one of the first times that I used Flex Box.
-                  </p>
-                </div>
+              </a>
             </div>
           </div>
       </section>
-</div>
 
-    <section id="contact" class="container">
+    <section id="contact" class="container-fluid">
       <div class="row">
-            <div class="col-xs-12">
-              <p class="contact-p">
-                  I am looking for new and interesting opportunities to demonstrate my skill. Contact me either by <a href="mailto:ericcesena@gmail.com">email</a> or <a href="tel:559-903-0934">phone</a>.
-              </p>
-            </div>
-
-
-
-        <footer id="footer" class="container">
-          <div class="row icons col-xs-offset-4 col-sm-offset-4 col-md-offset-4">
+            <div >
+              <h3 class="contact-p">
+                For questions or other queries please Contact me either by
+              <a href="mailto:ericcesena@gmail.com">email</a>,
+              <a href="tel:559-903-0934">phone</a>,
+              <a href="https://www.linkedin.com/in/ericcesena">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a> or
               <a href="http://twitter.com/intent/tweet?screen_name=EPSC30">
                 <i class="fa fa-twitter" ></i>
               </a>
+            </h3>
+            </div>
 
+      </div>
 
-                  <a href="https://www.linkedin.com/in/ericcesena">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-          </div>
+        <footer id="footer" class="container-fluid">
           <div class="row">
-            <div class="col-xs-12 col-sm-12">
+            <div class="copy">
               <p>Eric Cesena&copy; 2016</p>
             </div>
           </div>
         </footer>
       </section>
+  </div>
 
 
 

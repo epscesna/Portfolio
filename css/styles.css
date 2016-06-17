@@ -1,53 +1,27 @@
 
-/*colors# #7E9AD1 light blue
-          #343B70 new blue
-          #876C58 brown base
-          #798751 light green
-          #457050 dark green
-          #775187 violet accent
+/*colors#
           hsla(262, 86%, 72%, .25) cooling headline background
 */
 
 *{
   box-sizing: border-box;
-  font-size: 1.11em;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
 }
-body{
-    font-family: "Gabriola", serif;
-    background-color: #343B70;
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
 }
-.bg-color {
-  background-color: #876C58;
-}
-.bg-white{
-  background-color: #fff;
-  box-sizing: border-box;
-}
-h1{
-  margin: 0;
-  padding: 0;
-  line-height: .7;
-  color: #000;
-}
-p{
-  margin-top: 25%;
-}
-hr{
-  width: 80%;
-  padding-left: 10%;
-  border-top: 1px solid #775187;
-
+img{
+  width: 20em;
+  height: 20em;
 }
 
-.hr {
-  margin-left: 3%;
-}
 
-/************** HOME Area ******************/
-#home{
-  height: 25em;
+
+
+/************** Hero pic Area ******************/
+.heiro{
+  height:45em;
   width: auto;
   text-align: center;
   background-image: url('../images/home_hero.jpg');
@@ -55,189 +29,149 @@ hr{
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-
+  color: rgba(255,255, 255, .8);
 }
-
-.headline{
-  margin: 0 auto;
-  height: 1%;
-  /*width: 25%;*/
-  opacity: 1;
-  /*z-index: 1;*/
-}
-.headline h1{
-  text-shadow: 1px 1px 1px #798751;
-  opacity: 1;
-  padding-top: 7%;
-  color: #000;
-  font-size: 3em;
+/******************* home main header text*********************************/
+#header{
   position: relative;
-  left: 112%;
-  top: 0;
-  /*z-index: 1;*/
+  top: 0em;
+  height: 93%;
+  background-color: rgba(0, 0, 0, .7);
+  padding-top: 15em;
 }
-.call{
-  margin: 3% auto;
-  height: auto;
+#header h1{
+  font-family: serif;
+  font-size: 5em;
+}
 
-  opacity: 1;
-  /*z-index: 1;*/
-}
-.call p {
-  /*z-index: 1;*/
-  margin-top: 0;
-  margin: 0;
-  text-shadow: 1px 1px 1px  #798751;
-  position: relative;
-  top: 120px;
 
-}
-.op{
-  margin: 0 auto;
-  position: relative;
-  top:0;
-  background-color: hsla(262, 86%, 72%, .25);
-  width: auto;
-  height: 22.52em;
-  /*z-index: -1;*/
-}
 /****************** About Area **************************/
 .personal{
-  width: 100%;
-  margin: 0 auto
+  display: flex;
+  background-color: rgba(0, 24, 150, .8);
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  margin: 0 auto;
+  padding: 12em 0;
 }
-.photo{
-  width: 75%;
-  border-radius: 50%;
-  padding-top:  5%;
-  margin: 10%;
+
+.personal img{
+  border-radius: 1em 1em 1em 1em;
+
+
 }
-.quickbit{
-  padding-top: 5%;
+#about p{
+  text-align: center;
+  width: 20em;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: rgba(255,248,217, .8);
+}
+/********************* projects area**********************/
+#projects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.works{
+  margin: 3em auto;
 }
 .work-image{
-  padding-bottom: 1%;
+  margin-top: 3em;
+
 }
+.work-image:after, .work-image:before {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.work-image:after {
+    content: '/A';
+    height: 100%;
+    top: 0;
+    left: 15px;
+    background: rgba(0, 0, 0, .75);
+}
+.work-image:before {
+    content: attr(data-content);
+    width: 93%;
+    color: #fff;
+    z-index: 1;
+    left: 16px;
+    bottom: 0;
+    padding: 4px 10px;
+    text-align: center;
+    background: #169999;
+    box-sizing: border-box;
+  }
+.work-image:hover:after, .work-image:hover:before {
+    opacity: 1;
+}
+[data-content]:before {
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+
+
+
+
 .work-image img{
-  width: 85%;
-  margin: 5%;
-}
-.snipp{
-padding: 0 0 0 0;
-}
-.snipp p{
-  width: 85%;
-  margin: 5% auto;
-  text-align: center;
+  width: 25em;
+  border: .01em solid rgba(0, 0, 0, 0.1);
 }
 /******************* contact area***********************/
-
-#contact {
-  background-color: #457050;
-  height: 300px;
-}
-#contact div{
-  height: 200px;
-}
-#contact i{
-  position: relative;
-  bottom: 60px;
-  font-size: 2.5em;
-  text-align: center;
-  left: 16%;
-}
-.contact-p{
-  margin-top: 6%;
-  text-align: center;
-}
-
-/*#contact .icons a{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
-
-
-}*/
-#footer p{
+#contact{
   margin: 0;
-  text-align: center;
+  background-color: rgba(0, 0, 0, .8);
 }
+
+.contact-p{
+  margin: 0 auto;
+  text-align: center;
+  width: 25em;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2em 0;
+}
+
+
+
+
 
 /******************* NavBar *******************/
-.navbar{
-  background-color: #7E9AD1;
-  border: none;
-}
-nav li:hover{
-  background-color: hsla(142, 22%, 49%, .5);
-}
-/*********************** footer **********************************/
-#footer{
-  height: auto;
-  width: auto;
 
+/*********************** footer **********************************/
+#footer p{
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
 }
+
 
 
 /**************** Bootstrap Overrides**********************/
+
+.navbar-default{
+  background-color: rgba(0,0,0, .7);
+
+
+}
+.navbar-default h1{
+  line-height: 0;
+  color: rgba(255,255,255, .8);
+  margin-top: .25em;
+}
+.navbar-default .navbar-nav>li>a{
+  color: rgba(255,255,255, .8);
+}
+.navbar-default .navbar-nav>li>a:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/********************** media queries ***************************/
 .container-fluid{
   margin: 0;
   padding: 0;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #555;
-
-}
-.navbar-default .navbar-nav>li>a {
-    color: #000;
-}
-@media (max-width: 991px){
-  #contact i{
-    position: relative;
-    bottom: 60px;
-    font-size: 2.5em;
-    text-align: center;
-    left: 12%;
-  }
-}
-@media (max-width: 767px) {
-  #contact i{
-    position: relative;
-    bottom: 60px;
-    font-size: 2.5em;
-    text-align: center;
-    left: 10%;
-  }
-  .headline h1 {
-    text-shadow: 1px 1px 1px #798751;
-    opacity: 1;
-    padding-top: 7%;
-    color: #000;
-    font-size: 3em;
-    position: relative;
-    left: 1%;
-    top: 0;
-    /* z-index: 1; */
-}
-}
-@media (max-width: 680px) {
-  #contact i{
-    position: relative;
-    bottom: 60px;
-    font-size: 2.5em;
-    text-align: center;
-    left: 8%;
-  }
-}
-
-@media (max-width: 480px){
-  #contact i{
-    position: relative;
-    bottom: 60px;
-    font-size: 2.5em;
-    text-align: center;
-    left:3%;
-  }
 }

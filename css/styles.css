@@ -40,7 +40,7 @@ img{
   padding-top: 15em;
 }
 #header h1{
-  font-family: serif;
+
   font-size: 5em;
 }
 
@@ -48,7 +48,7 @@ img{
 /****************** About Area **************************/
 .personal{
   display: flex;
-  background-color: rgba(0, 24, 150, .8);
+  background-color: rgba(37, 37, 37, 1);
   justify-content: space-around;
   flex-wrap: wrap-reverse;
   padding: 5em 0;
@@ -60,7 +60,7 @@ img{
   width: 25em;
 }
 .photo{
-  padding-top: 2em;
+
   margin-left: 0;
 }
 #about p{
@@ -68,7 +68,7 @@ img{
   width: 20em;
   margin-left: 3em;
   color: rgba(255,248,217, .8);
-  padding-top: 2em;
+
 }
 /********************* projects area**********************/
 #projects{

@@ -1,190 +1,165 @@
-
-/*colors#
-          hsla(262, 86%, 72%, .25) cooling headline background
-*/
-
-*{
-  box-sizing: border-box;
-}
-html, body{
-    /*font-family: 'Open Sans', sans-serif;*/
-    font-family: 'Cinzel', serif;
-    letter-spacing: .1em;
+html{
     font-size: 16px;
-    margin: 0;
 }
-img{
-  width: 20em;
-  height: 20em;
+body{
+  font-family: 'Cinzel', serif;
+  position: relative;
+  background-color: #333333;
+  color: #eee;
+  font-size: 1.25em;
 }
-
-
-
-
-/************** Hero pic Area ******************/
-.heiro{
-  height:45em;
-  width: auto;
+/*HEADER*/
+.header {
+  background-color: rgba(0,0,0,.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: #fff;
+  z-index: 10;
+}
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+}
+.navbar-brand {
+  margin: 0;
+  font-size: 2.5em;
+}
+.navbar-toggle {
+  margin-right: 0;
+}
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-nav li a {
+  color: #fff;
+  transition: 250ms;
+}
+.navbar-nav li a:hover {
+  color: #fff;
+  background-color: rgba(255,255,255,.2);
+}
+.navbar-nav li.active a {
+  background-color: rgba(255,255,255,.2);
+}
+/*MAIN*/
+.section {
+  padding: 3.15em 0;
+}
+.section-hero {
+  position: relative;
   text-align: center;
+  padding: 30vh 0;
+  color: #fff;
+}
+.section-hero .hero-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   background-image: url('../images/home_hero.jpg');
-  background-position: center;
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgba(255,255, 255, .8);
+  background-position: center;
+  height: 46.875em;
+  z-index: -1;
 }
-/******************* home main header text*********************************/
-#header{
-  position: relative;
-  top: 0em;
-  height: 45em;
-  background-color: rgba(0, 0, 0, .7);
-  padding-top: 15em;
-  font-family: 'Cinzel', serif;
+.section-hero .hero-bg:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 46.875em;
+  background-color: rgba(0,0,0,.7);
 }
-#header h1{
-
-  font-size: 5em;
+.section-hero h1 {
+  font-size: 10vw;
+  margin-top: 0;
 }
-#header p{
-  letter-spacing: .2em;
+@media(min-width: 768px){
+  .section-hero h1 {
+    font-size: 4.8125em;
+  }
 }
-
-/****************** About Area **************************/
-#about {
+.section-about {
+  color: #fff8d9;
+  font-size: 1.2em;
+  background-color: #333333;
   background-image: url('../images/congruent_outline.png');
-}
-.personal{
-  display: flex;
-  background-color: rgba(37, 37, 37, .7);
-  justify-content: space-around;
-  flex-wrap: wrap-reverse;
-  padding: 5em 0;
-}
-
-.personal img{
-  border-radius: 1em 1em 1em 1em;
-  height: 25em;
-  width: 25em;
-}
-.photo{
-
-  margin-left: 0;
-}
-#about p{
-  text-align: center;
-  width: 20em;
-  margin-left: 3em;
-  color: rgba(255,248,217, .8);
-
-}
-/********************* projects area**********************/
-#projects{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.works{
-  margin: 0 auto;
-}
-.work-image{
-  margin-top: 3em;
-  margin-bottom: 3em;
-
-}
-.work-image:after, .work-image:before {
-    position: absolute;
-    opacity: 0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-.work-image:after {
-    background: rgba(0, 0, 0, .75);
-}
-.work-image:before {
-    content: attr(data-content);
-    width: 14.66em;
-    color: rgba(255, 255, 255, 0.7);
-    z-index: 1;
-    height: 11.76em;
-    padding: .25em .7em;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    box-sizing: border-box;
-  }
-.work-image:hover:after, .work-image:hover:before {
-    opacity: 1;
-}
-[data-content]:before {
-    font-family: sans-serif;
-    font-size: 1.7em;
-}
-
-
-
-
-
-.work-image img{
-  width: 25em;
-  border: .01em solid rgba(0, 0, 0, 0.1);
-}
-/******************* contact area***********************/
-#contact{
-  margin: 0;
-  background-color: rgba(0, 0, 0, .8);
-}
-
-.contact-p{
-  margin: 0 auto;
-  text-align: center;
-  width: 26em;
-  color: rgba(255, 255, 255, 0.5);
-  padding: 2em 0;
-}
-
-/*********************** footer **********************************/
-#footer p{
+  background-position: center bottom;
   position: relative;
+}
+.section-about .bio{
+    padding-top: 1.2em;
+}
+.section-about:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+}
+.section-portfolio {
+  background-image: url('../images/congruent_outline.png');
+  background-position: center top;
+}
+.portfolio-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: .9375em 0;
+}
+.portfolio-item:before {
+  content: "";
+  float: left;
+  padding-top: 100%;
+}
+.touch  .portfolio-item .portfolio-content,
+.portfolio-item:hover .portfolio-content {
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  transition: color 500ms 250ms, background-color 250ms;
+}
+.portfolio-content {
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  padding: .9375em;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: transparent;
+  background-color: transparent;
+  transition: 250ms;
 }
-
-
-
-/**************** Bootstrap Overrides**********************/
-
-.navbar-default{
-  background-color: rgba(0,0,0, .7);
+.portfolio-item-1 {
+  background-image: url('../images/geekwise-scheduler.png');
 }
-.navbar-default h1{
-  line-height: 0;
-  color: rgba(255,255,255, .8);
-  margin-top: .25em;
+.portfolio-item-2 {
+  background-image: url('../images/secondportfolio.png');
 }
-.navbar-default .navbar-nav>li>a{
-  color: rgba(255,255,255, .8);
+.portfolio-item-3 {
+  background-image: url('../images/theme-recreated.png');
 }
-.navbar-default .navbar-nav>li>a:hover{
-  background-color: rgba(0, 0, 0, 0.7);
+.portfolio-item-4 {
+  background-image: url('../images/twitter-recreate.png');
 }
-.container-fluid{
-  margin: 0;
-  padding: 0;
+.section-contact {
+  background-color: #333333;
+  text-align: center;
+  font-size: 1em;
+  color: #eee;
 }
-/********************** media queries ***************************/
-
-@media screen and (max-width: 480px) {
-  .personal img {
-      border-radius: 1em 1em 1em 1em;
-      margin-left: -4em;
-  }
-  #about p{
-    text-align: center;
-    width: 20em;
-    margin-left: 2em;
-    color: rgba(255,248,217, .8);
-    padding-top: 2em;
-  }
+/*FOOTER*/
+.footer {
+  padding: 1.25em 0;
+  font-size: .8125em;
+  text-align: center;
+  background-color: rgba(0,0,0,.5);
 }
